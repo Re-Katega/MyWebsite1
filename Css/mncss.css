@@ -1,0 +1,60 @@
+.main {
+color: white;
+text-align: center;
+margin-top: 300px;
+margin-bottom: 20px;
+margin-left: 20px;
+margin-right: 20px;
+font-family: tiro-tamil;
+font-size: 30px;
+}
+
+.txticon {
+    position: absolute;
+    top: 58%;   
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    object-fit: cover;  /* Prevents image distortion */
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {   
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+body {
+background-color: black;
+
+
+}
+
+.gobackbtn {
+    color: black;
+    padding: 20px 40px;
+    display: inline-block;
+    background-color: whitesmoke;
+    margin-top: 350px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 13px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 46%;
+
+
+}
+
+.gobackbtn:hover {
+    background-color: rgb(119, 119, 119);
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}

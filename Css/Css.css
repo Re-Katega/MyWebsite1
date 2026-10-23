@@ -1,0 +1,93 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #101010;
+    color: white;
+
+}
+
+#bg-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.welcome {
+    font-family: tiro-tamil;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    min-height: 100vh;
+    align-content: center;
+    justify-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+.welcome h1 {
+    font-family: tiro-tamil;
+    margin: 0 0 0.5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+}
+
+.welcome p {
+    font-family: tiro-tamil;
+    margin: 0;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.mainpagebtn {
+    color: black;
+    padding: 20px 40px;
+    display: inline-block;
+    background-color: whitesmoke;
+    margin-top: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 13px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.mainpagebtn:hover {
+    background-color: rgb(119, 119, 119);
+    transform: scale(0.9);
+}
+.spinning-icon {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Optional: Makes the photo a perfect circle */
+    object-fit: cover;  /* Prevents image distortion */
+    position: absolute; 
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 4s linear infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
